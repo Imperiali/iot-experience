@@ -1,35 +1,37 @@
-# Project Charter
+# Definição do projeto
 
-## Business background
-- Who is the client, what business domain the client is in
-- What business problems are we trying to address?
+## Área de atuação
+Pessoas que buscam:
+- melhorar seu condicionamento físico
+- se manter ativas
+- mudar seu estilo de vida para um padrão mais saudável
 
-## SCope
-- What data science solutins are we trying to build
-- What will we do?
-- How is it going to be consumed by the customer?
+## Escopo
+- Monitoramento das atividades diárias
+- Predição de hábitos
+- Sugestão de atividades regulares
 
-## Personnel
-- Who are on this project:
-  - Microsoft:
-    - Project Lead
-    - PM
-    - Data Sccientist(s)
-    - Account Manager
-  - Client:
-    - Data administrator
-    - Business contact
+## Equipe
+- Igor Imperiali:
+  - Data Sccientist(s)
+  - Data administrator
+- Bruno Verdan:
+  - Data Sccientist(s)
+  - Data administrator
+- Fernando Ferreira
+  - Business contact
+  - Stackholder
 
-## Metrics
-- What are the qualitative objectives? (e.g. reduce user chum)
-- What is a quantifiable metric (e.g. reduce the fraction of users with 4-week inactivity)
-- Quantify what improvement in the values of the metrics are useful for the customer scenario (e.g. reduce the fraction of users with 4-week inactivity by 20%)
+## Metricas
+- Aumentar a quantidade de exercicios feitos por dia
+- Aumentar o deficit calorico do usuário
+- Aumentar a massa magra e a diminuir porcentagem de gordura em 5% em um mês
 
-## Raw Data Sources
+## Fontes de dados brutos
 
 | Dataset Name | Original Location | Destination Location | Data Movement Tools / Scripts | Link to Report  |
-|--------------|-------------------|----------------------|-------------------------------|-----------------|
 | Dataset 1    | Brief description of its original location | Brief description of its original location | [script1.py]() | [Dataset 1 Report]() |
+|--------------|-------------------|----------------------|-------------------------------|-----------------|
 | Dataset 2    | Brief description of its original location | Brief description of its original location | [script2.py]() | [Dataset 2 Report]() |
 
 - Dataset1 summary, <Provide brief summary of th edata, such as how to access the data. More Detailed information should be in the Dataset1 Report>
