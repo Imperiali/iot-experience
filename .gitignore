@@ -1,1 +1,4 @@
+# ignore data processed and model
+
 Data/Processed/*.csv
+Data/Modeling/*.csv
