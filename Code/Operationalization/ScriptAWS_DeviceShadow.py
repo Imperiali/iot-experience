@@ -22,6 +22,7 @@ df = df.set_index('date')
 
 def findAvarage(df, clName):
     new_df_avg = df[[clName]].sort_values(by='date').copy()
+    #colocar datetime.now.weekday() == 0 and 
     if((new_df_avg.index.max() - timedelta(7)).weekday() == 0):
         df_7last_days = new_df_avg[-6:]
         avg = df_7last_days[clName].mean()
