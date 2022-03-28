@@ -1,3 +1,3 @@
-# Projeto <nome_a_definir>
+# Projeto SmartWatch
 
-A ideia do projeto <nome_a_definir> é ajudar a melhorar a saúde das pessoas através da ciencia de dados
+A ideia do projeto SmartWatch é ajudar a melhorar a saúde das pessoas através da ciencia de dados
