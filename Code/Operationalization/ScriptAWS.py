@@ -21,8 +21,8 @@ def publishAws(payload):
 
 
 if __name__ == "__main__":
-    read_from_line = 0
-    while True:
+    stop = True
+    while stop:
         event_loop_group = io.EventLoopGroup(1)
         host_resolver = io.DefaultHostResolver(event_loop_group)
         client_bootstrap = io.ClientBootstrap(event_loop_group,  host_resolver)
@@ -33,11 +33,11 @@ if __name__ == "__main__":
             ca_filepath=PATH_TO_AMAZON_ROOT_CA_1,
             client_bootstrap=client_bootstrap,
             client_id=CLIEND_ID,
-            clean_session=False,
-            keep_alive_secs=6
+            clean_session=False
         )
         connection_future = mqtt_connection.connect()
         connection_future.result()
         df.apply(lambda x: publishAws(json.dumps(json.loads(x.to_json()))), axis=1)
         disconnect_future = mqtt_connection.disconnect()
         disconnect_future.result()
+        stop = False
