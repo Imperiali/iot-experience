@@ -5,7 +5,7 @@ import seaborn as sns
 
 from fbprophet import Prophet
 
-df = pd.read_csv('/content/drive/MyDrive/SmartWatchDatastore.csv')
+df = pd.read_csv('../../Data/Modeling/SmartWatchDatastore.csv')
 df.date = pd.to_datetime(df.date)
 df = df.sort_values(by='date') 
 df = df.set_index('date')
